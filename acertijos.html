@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman: Más Allá del Héroe</title>
+    <link rel="stylesheet" href="styles/acertijos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+</head>
+<body>
+    <main id="hero">
+        <div class="inicio">
+            <h1 class="titulo">Batman: Más Allá del Héroe</h1>
+            <nav>
+                <ul>
+                    <li class="nav-links"><a href="index.html">Inicio</a></li>
+                    <li class="nav-links"><a href="historia.html">Historia</a></li>
+                    <li class="nav-links"><a href="acertijos.html">Acertijos</a></li>
+                    <li class="nav-links"><a href="universos.html">Universo Batman</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="formulario-container">
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Nombre" minlength="3" maxlength="40" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ\s'-]*" required>
+                <input type="text" id="lname" name="lname" placeholder="Apellidos" minlength="5" maxlength="60" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s'-]+(\s[A-Za-záéíóúÁÉÍÓÚñÑ\s'-]+)*" required>
+                <input type="text" name="Correo electrónico" id="email" placeholder="Correo electrónico" type="text" pattern="[a-z0-9_$%?¿]+@([a-z])+\.[a-z]{2,4}"  required/>
+                <input type="text" id="genero" name="genero" maxlength="1" placeholder="Género" required>
+                <input type="number" id="edad" name="edad" placeholder="Edad" min="5" max="120" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="aceptar" name="aceptar" required>
+                    <label for="aceptar">Acepto los términos de datos y política</label>
+                </div>
+                <input type="text" id="pregunta1" name="pregunta1" placeholder="¿Cómo se llama el Comisionado de Policía de Gotham City, aliado de Batman?" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                <input type="text" id="pregunta2" name="pregunta2" placeholder="¿Cuál es el aliado más cercano de Batman?" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                <input type="text" id="pregunta3" name="pregunta3" placeholder="¿Cuál es la ciudad de Batman?" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                <input type="text" id="pregunta4" name="pregunta4" placeholder="¿Qué villano es conocido como 'El Príncipe Payaso del Crimen'?" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                <input type="text" id="pregunta5" name="pregunta5" placeholder="¿Cuál es el nombre completo del mayordomo y aliado de Batman?" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
+                
+                <input type="submit" value="Enviar" class="boton-enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

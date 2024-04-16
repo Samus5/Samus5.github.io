@@ -1,0 +1,94 @@
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0e0d0d;
+    color: #ffffff;
+}
+
+#hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./img/FondoHome.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 5vw;
+    color: #ffee32;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    animation: glow 5s alternate; /* Agrega la animación glow */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #ffee32, 0 0 40px #ffee32, 0 0 60px #ffee32, 0 0 80px #ffee32, 0 0 100px #ffee32, 0 0 120px #ffee32, 0 0 140px #ffee32, 0 0 160px #ffee32; /* Empieza con un brillo intenso */
+    }
+    to {
+        text-shadow: none; /* Hace que la sombra del texto desaparezca gradualmente */
+        color: #ffee32; /* Restaura el color original del texto */
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+.nav-links {
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #808080;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #dbd809;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 6vw;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        margin-right: 0; /* Eliminar el margen derecho para que los elementos del menú estén más juntos */
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 40px; /* Ajusta el tamaño de la fuente para tablet */
+    }
+}
